@@ -1,0 +1,71 @@
+.contato {
+  h2 {
+    margin-bottom: 2.4rem;
+  }
+  p {
+    color: #000;
+    margin-bottom: 2.4rem;
+  }
+
+  div {
+    margin: 0.8rem 0;
+    font-size: 1.4rem;
+  }
+}
+.infos {
+  div {
+    padding: 0.7rem 2rem;
+    display: flex;
+    font-weight: 700;
+  }
+  img {
+    margin-right: 0.8rem;
+  }
+  h4 {
+    margin-left: 2rem;
+  }
+}
+.post-title {
+  font-size: 1.6rem;
+}
+
+#contato-form {
+  padding: 0 2.4rem;
+  input {
+    border: 1px solid #eeeeee;
+    border-radius: 2px;
+    &:hover,
+    &:focus,
+    &:active {
+      border: 1px solid $pink;
+    }
+  }
+  #contato-name,
+  #contato-email {
+    margin-right: 2.4rem;
+    width: 33rem;
+  }
+  .assunto {
+    display: flex;
+    flex-direction: column;
+    input {
+      width: 68rem;
+      border: 1px solid #eeeeee;
+      border-radius: 2px;
+      &:hover,
+      &:focus,
+      &:active {
+        border: 1px solid $pink;
+      }
+    }
+    textarea {
+      border: 1px solid #eeeeee;
+      border-radius: 2px;
+      &:hover,
+      &:focus,
+      &:active {
+        border: 1px solid $pink;
+      }
+    }
+  }
+}
