@@ -63,7 +63,7 @@ main {
   justify-content: center;
 }
 
-.post-preview {
+.post {
   background-color: #fff;
   width: 73rem;
   margin-right: 5rem;
@@ -73,61 +73,61 @@ main {
   border-radius: 4px;
 }
 
-.post-preview h2,
-.post-preview p,
-.post-preview .btn-open {
+.post h2,
+.post p,
+.post .btn-open {
   padding: 0 2.4rem;
 }
 
-.post-preview h2 {
+.post h2 {
   padding-top: 2.4rem;
 }
 
-.post-preview img {
+.post img {
   object-fit: fill;
 }
 
-.post-preview .text-preview {
+.post .text-preview {
   margin: 2.4rem 0;
   line-height: 1.9rem;
 }
 
-.post-preview .post-list {
+.post .post-list {
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
 }
 
-.post-preview ul {
+.post ul {
   padding-left: 4.8rem;
 }
 
-.post-preview li {
+.post li {
   list-style-type: disc;
 }
 
-.post-preview .sub-list {
+.post .sub-list {
   list-style-type: circle;
 }
 
-.post-preview .post-data {
+.post .post-data {
   font-size: 1.2rem;
   color: #929292;
   padding-top: 0.8rem;
   padding-bottom: 1.4rem;
 }
 
-.post-preview .btn-open {
+.post .btn-open {
   display: flex;
   justify-content: right;
 }
 
-.post-preview .open-post {
+.post .open-post {
   padding: 1.2rem 2.4rem;
   border-radius: 2rem;
   border: 1px solid #fe0078;
 }
 
-.post-preview .open-post:hover {
+.post .open-post:hover {
   background-color: #fe0078;
   color: #fff;
 }
@@ -138,7 +138,7 @@ aside {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  max-height: 130rem;
+  max-height: 139rem;
 }
 
 .post-search {
@@ -154,7 +154,8 @@ aside {
   padding: 16.5px 218px 16.5px 20px;
 }
 
-.post-search input:focus, .post-search input:hover, .post-search input:active {
+.post-search input:focus-visible, .post-search input:hover, .post-search input:active {
+  outline: none;
   border: 1px solid #fe0078;
 }
 
@@ -164,8 +165,8 @@ aside {
 
 .menu-cats li {
   display: flex;
-  padding-bottom: 1.6rem;
-  border-bottom: 2px dashed #eee;
+  padding: 1.6rem 0;
+  border-bottom: 2px dotted #eee;
 }
 
 .menu-cats li:hover {
@@ -186,18 +187,25 @@ aside {
   margin: 2.5rem 0;
 }
 
-.publi {
-  margin: 0 2rem;
+.publi h2 {
+  margin-left: 2rem;
 }
 
-.publi div {
-  width: 32rem;
-  height: 24rem;
-  background-color: #eee;
-  font-size: 3.6rem;
+.publi__ads {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+
+.publi__ad {
+  width: 32rem;
+  height: 24rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  font-size: 3.6rem;
   margin-bottom: 3.2rem;
   flex-shrink: 1;
 }
@@ -293,6 +301,15 @@ aside {
 
 #contato-form {
   padding: 0 2.4rem;
+}
+
+#contato-form h2 {
+  padding: 0;
+  padding-top: 1.8rem;
+}
+
+#contato-form label {
+  color: #000;
 }
 
 #contato-form input {
