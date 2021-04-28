@@ -3,7 +3,7 @@ main {
   display: flex;
   justify-content: center;
 }
-.post-preview {
+.post {
   background-color: #fff;
   width: 73rem;
   margin-right: 5rem;
@@ -58,5 +58,17 @@ main {
       background-color: $pink;
       color: #fff;
     }
+  }
+}
+
+.animation {
+  animation: grow 10s ease-in initial;
+}
+@keyframes grow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

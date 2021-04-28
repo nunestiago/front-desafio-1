@@ -4,7 +4,8 @@ aside {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  max-height: 130rem;
+  // max-height: 139rem;
+  flex: 0 1 auto;
 }
 .post-search {
   margin: 2rem;
@@ -15,9 +16,10 @@ aside {
     border-radius: 10px;
     font-size: 1.4rem;
     padding: 16.5px 218px 16.5px 20px;
-    &:focus,
+    &:focus-visible,
     &:hover,
     &:active {
+      outline: none;
       border: 1px solid $pink;
     }
   }
@@ -27,8 +29,8 @@ aside {
   margin: 0 2rem;
   li {
     display: flex;
-    padding-bottom: 1.6rem;
-    border-bottom: 2px dashed #eee;
+    padding: 1.6rem 0;
+    border-bottom: 2px dotted #eee;
     &:hover {
       color: $pink;
     }
@@ -48,15 +50,23 @@ aside {
 }
 
 .publi {
-  margin: 0 2rem;
-  div {
-    width: 32rem;
-    height: 24rem;
-    background-color: #eee;
-    font-size: 3.6rem;
+  h2 {
+    margin-left: 2rem;
+  }
+  &__ads {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+  }
+  &__ad {
+    width: 32rem;
+    height: 24rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eee;
+    font-size: 3.6rem;
     margin-bottom: 3.2rem;
     flex-shrink: 1;
   }

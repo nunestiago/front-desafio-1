@@ -14,17 +14,17 @@
     <title>logoipsum&#174;</title>
   </head>
   <body>
-    <nav>
-      <img src="./assets/logo.svg" alt="logo logoipsum" />
-      <ul class="div-nav">
-        <li class="item-nav"><a href="./index.html">Início</a></li>
-        <li class="item-nav"><a href="./pages/sobre.html">Sobre</a></li>
-        <li class="item-nav"><a href="./pages/contato.html">Contato</a></li>
-      </ul>
-    </nav>
+    <header>
+      <img src="./assets/logo.svg" alt="logo logoipsum" class="nav__img" />
+      <nav class="nav__bar">
+        <a class="nav__link" href="./index.html">Início</a>
+        <a class="nav__link" href="./pages/sobre.html">Sobre</a>
+        <a class="nav__link" href="./pages/contato.html">Contato</a>
+      </nav>
+    </header>
     <main>
       <div class="posts">
-        <article class="post-preview">
+        <article class="post">
           <h2 class="post-title">Lorem ipsum dolor sit amet</h2>
           <p class="post-data">26/07/2020 às 00:04 - By: Fulano</p>
           <img src="./assets/pessoa.png" alt="pessoa no computador" />
@@ -47,7 +47,7 @@
             <a href="./posts/post.html" class="open-post">Continuar lendo</a>
           </div>
         </article>
-        <article class="post-preview">
+        <article class="post">
           <h2 class="post-title">Lorem ipsum dolor sit amet</h2>
           <p class="post-data">26/07/2020 às 00:04 - By: Fulano</p>
           <img src="./assets/computador.png" alt="pessoa no computador" />
@@ -69,7 +69,7 @@
             <a href="./posts/post.html" class="open-post">Continuar lendo</a>
           </div>
         </article>
-        <article class="post-preview">
+        <article class="post">
           <h2 class="post-title">Lorem ipsum dolor sit amet</h2>
           <p class="post-data">26/07/2020 às 00:04 - By: Fulano</p>
           <img src="./assets/pintura.png" alt="pessoa no computador" />
@@ -120,9 +120,11 @@
         </section>
         <section class="publi">
           <h2 class="menu-topic">Publicidade</h2>
-          <div class="publi">320 x 240</div>
-          <div class="publi">320 x 240</div>
-          <div class="publi">320 x 240</div>
+          <div class="publi__ads">
+            <div class="publi__ad">320 x 240</div>
+            <div class="publi__ad">320 x 240</div>
+            <div class="publi__ad">320 x 240</div>
+          </div>
         </section>
       </aside>
     </main>
