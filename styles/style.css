@@ -37,7 +37,7 @@ label {
   list-style-type: none;
 }
 
-nav {
+header {
   background-color: #fff;
   padding: 1.4rem 14rem;
   display: flex;
@@ -49,11 +49,11 @@ nav {
   margin-bottom: 5.6rem;
 }
 
-nav ul {
+header nav {
   display: flex;
 }
 
-nav a {
+header a {
   padding: 1.4rem 2.4rem;
 }
 
@@ -132,13 +132,26 @@ main {
   color: #fff;
 }
 
+.animation {
+  animation: grow 10s ease-in initial;
+}
+
+@keyframes grow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 aside {
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  max-height: 139rem;
+  flex: 0 1 auto;
 }
 
 .post-search {

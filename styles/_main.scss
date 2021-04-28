@@ -60,3 +60,15 @@ main {
     }
   }
 }
+
+.animation {
+  animation: grow 10s ease-in initial;
+}
+@keyframes grow {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

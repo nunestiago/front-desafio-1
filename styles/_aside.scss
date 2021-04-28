@@ -4,7 +4,8 @@ aside {
   border-radius: 4px;
   display: flex;
   flex-direction: column;
-  max-height: 139rem;
+  // max-height: 139rem;
+  flex: 0 1 auto;
 }
 .post-search {
   margin: 2rem;
